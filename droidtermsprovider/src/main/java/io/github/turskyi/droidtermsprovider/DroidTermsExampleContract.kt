@@ -13,7 +13,7 @@ object DroidTermsExampleContract : BaseColumns {
     /**
      * This it the content authority for DroidTermsExample provider.
      */
-    private const val CONTENT_AUTHORITY = "com.example.udacity.droidtermsexample"
+    private const val CONTENT_AUTHORITY = "io.github.turskyi.quizapp"
 
     /**
      * This is the [Uri] on which all other DroidTermsExample Uris are built.

@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
     /* an async task to do the data fetch off of the main thread. */
-    private class WordFetchTask(context: MainActivity): AsyncTask<Void?, Void?, Cursor>() {
+    private class WordFetchTask(context: MainActivity): AsyncTask<Void?, Void?, Cursor?>() {
 
         private val activityReference: WeakReference<MainActivity> = WeakReference(context)
         /* get a reference to the activity if it is still there */
@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         /* Invoked on UI thread */
-        override fun onPostExecute(cursor: Cursor) {
+        override fun onPostExecute(cursor: Cursor?) {
             super.onPostExecute(cursor)
 
             /* Set the data for MainActivity */
