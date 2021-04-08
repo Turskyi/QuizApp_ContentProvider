@@ -8,12 +8,14 @@ import android.provider.BaseColumns
 /**
  * The contract between the DroidTermsExample provider and other applications. Contains definitions
  * for the supported URIs and columns.
+ * This object communicating with another app from here
+ * [https://github.com/udacity/DroidTermsExample-APK/raw/master/droidtermsexample-release.apk]
  */
 object DroidTermsExampleContract : BaseColumns {
     /**
      * This it the content authority for DroidTermsExample provider.
      */
-    private const val CONTENT_AUTHORITY = "io.github.turskyi.quizapp"
+    private const val CONTENT_AUTHORITY = "com.example.udacity.droidtermsexample"
 
     /**
      * This is the [Uri] on which all other DroidTermsExample Uris are built.

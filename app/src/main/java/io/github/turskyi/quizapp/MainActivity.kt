@@ -11,7 +11,9 @@ import io.github.turskyi.droidtermsprovider.DroidTermsExampleContract
 import java.lang.ref.WeakReference
 
 /**
- * Gets the data from the ContentProvider and shows a series of flash cards.
+ * Gets the data from the ContentProvider  of the app from here
+ * https://github.com/udacity/DroidTermsExample-APK/raw/master/droidtermsexample-release.apk
+ * and shows a series of flash cards.
  */
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
     companion object {
@@ -53,7 +55,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     /**
      * This is called from the layout when the button is clicked and switches between the
      * two app states.
-     * @param this@onButtonClick The view that was clicked
+     * @param @onButtonClick The view that was clicked
      */
     @Suppress("unused")
     fun View?.onButtonClick() {
